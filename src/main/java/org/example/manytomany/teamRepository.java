@@ -1,8 +1,10 @@
 package org.example.manytomany;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
 
-public interface stadiumRepository extends JpaRepository<Stadium,Long> {
-    Optional<Stadium> findByName(String name);
+public interface teamRepository extends JpaRepository<Team,Long> {
+    Optional<Team> findByName(String name);
+
 }
